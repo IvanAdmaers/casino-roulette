@@ -1,0 +1,40 @@
+{
+  "name": "casino-roulette",
+  "version": "1.0.0",
+  "description": "Just the first free and open source casino roulette",
+  "main": "src/index.ts",
+  "scripts": {
+    "babel:dev": "babel src -d dist --extensions \".ts,.tsx,.js,.jsx\" --watch --copy-files",
+    "babel:build": "babel src -d dist --extensions \".ts,.tsx,.js,.jsx\" --copy-files",
+    "webpack:dev": "webpack serve",
+    "webpack:build": "webpack --mode=production",
+    "dev": "npm run babel:dev & npm run webpack:dev",
+    "build": "npm run babel:build && npm run webpack:build",
+    "test": "jest"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/plugin-transform-react-jsx": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/jest": "^29.5.1",
+    "babel-jest": "^29.5.0",
+    "css-loader": "^6.7.4",
+    "html-webpack-plugin": "^5.5.1",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.6"
+  }
+}

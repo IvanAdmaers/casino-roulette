@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: green;
+  background-image: url("../assets/backgrounds/static-green.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: #075600;
+  min-height: 100vh;
+  font-weight: 400;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#roulette-wheel {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+#roulette-table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
